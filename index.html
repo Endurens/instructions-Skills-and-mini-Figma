@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инструкция: установка скиллов + мини-Figma</title>
+  <meta name="description" content="Пошаговая инструкция: установка готовых скиллов Grill me, UI/UX Pro Max и Senior Fullstack, затем сборка мини-Figma на React + TS + Vite + Tailwind с чёткой архитектурой." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Верхняя панель с прогрессом -->
+  <header class="topbar">
+    <div class="container">
+      <div class="progress-row">
+        <span class="progress-label">Прогресс</span>
+        <span class="progress-count" id="progressCount">0/7 шагов</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+      <p class="progress-hint" id="progressHint"></p>
+    </div>
+  </header>
+
+  <main class="container page-bottom">
+
+    <!-- Hero -->
+    <section class="hero animate-fade-up">
+      <div class="pill"><span class="dot"></span><span>Skill Install + Build Guide</span></div>
+      <h1>Скиллы и <span class="shimmer-text">мини-Figma</span><br />за 7 шагов</h1>
+      <p class="lead">Инструкция: устанавливаем три готовых скилла — Grill me, UI/UX Pro Max и Senior Fullstack — и собираем мини-Figma на React + TypeScript + Vite + Tailwind с чёткой файловой архитектурой и файлом запуска. Каждый шаг — рабочее приложение.</p>
+      <div class="chips" id="chips"></div>
+    </section>
+
+    <!-- Карточки шагов (рендерит js/app.js) -->
+    <section class="steps" id="steps"></section>
+
+    <!-- Финальный баннер -->
+    <section class="final-banner animate-scale-in" id="finalBanner" style="display:none">
+      <div class="emoji">🚀</div>
+      <h3>Готово! Скиллы стоят, мини-Figma работает.</h3>
+      <p>Grill me, UI/UX Pro Max и Senior Fullstack установлены и проверены. Канвас, фигуры, слои и горячие клавиши — всё как в настоящей Figma.</p>
+      <p style="margin-top:12px"><button class="done-btn" id="resetBtn" type="button">Сбросить прогресс</button></p>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <p class="mono">Skills Install + Mini-Figma Guide</p>
+      <p id="footerCount">0 из 7 выполнено</p>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
